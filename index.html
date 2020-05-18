@@ -22,10 +22,10 @@
     </div>
     <h1 class="title">We are launching <span>soon!</span></h1>
     <h2 class="subtitle">Subscribe and get notified</h2>
-    <form class="form" action="/">
+    <form class="form" action="/" onsubmit="return validateForm();">
       <div class="input-field">
         <input class="input-email" type="text" name="email" id="email" aria-roledescription="email" placeholder="Your email address">
-        <label class="label-error" for="email">Please provide a valid email address</label>
+        <label class="label-error" id="label-error" for="email">Please provide a valid email address</label>
       </div>
       <button class="btn-submit" type="submit">Notify Me</button>
     </form>
@@ -43,5 +43,6 @@
     Coded by <a href="#">Your Name Here</a>.
   </footer>
 
+  <script src="./script.js"></script>
 </body>
 </html>
