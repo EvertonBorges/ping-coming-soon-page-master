@@ -88,6 +88,7 @@ main {
 }
 
 .btn-submit {
+    transition: ease-in-out 0.3s all;
     cursor: pointer;
     margin-top: 8px;
     border: none;
@@ -97,6 +98,10 @@ main {
     padding: 12px 30px;
     font-size: 11px;
     font-weight: 600;
+}
+
+.btn-submit:hover {
+    background-color: hsla(223, 87%, 63%, 85%);
 }
 
 .img-dashboard {
