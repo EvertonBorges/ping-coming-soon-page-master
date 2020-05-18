@@ -28,6 +28,7 @@ main {
 }
 
 .title {
+    cursor: default;
     text-align: center;
     margin-top: 32px;
     color: hsl(0, 0%, 59%);
@@ -41,6 +42,7 @@ main {
 }
 
 .subtitle {
+    cursor: default;
     text-align: center;
     color: hsl(209, 33%, 12%);
     margin-top: 16px;
@@ -66,7 +68,10 @@ main {
     padding: 12px 30px;
     font-size: 11px;
     width: 100%;
-    opacity: 0.8;
+}
+
+.input-email::placeholder {
+    color: hsl(223, 100%, 88%);
 }
 
 .input-error {
@@ -82,13 +87,7 @@ main {
     color: hsl(354, 100%, 66%);
 }
 
-.input-email::placeholder {
-    color: hsl(223, 100%, 88%);
-    opacity: 0.8;
-}
-
 .btn-submit {
-    transition: ease-in-out 0.3s all;
     cursor: pointer;
     margin-top: 8px;
     border: none;
@@ -101,6 +100,7 @@ main {
 }
 
 .btn-submit:hover {
+    transition: ease-in-out 0.3s all;
     background-color: hsla(223, 87%, 63%, 85%);
 }
 
@@ -119,6 +119,7 @@ main {
 }
 
 .copyright {
+    cursor: default;
     text-align: center;
     font-size: xx-small;
     color: hsl(0, 0%, 59%);
@@ -126,12 +127,28 @@ main {
     font-weight: 600;
 }
 
-.fab {
+.btn-icon {
     color: hsl(223, 87%, 63%);
-    font-size: 0.75rem;
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.btn-icon:hover {
+    transition: ease-in-out 0.3s all;
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+}
+
+.btn-icon > i {
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
 }
 
 footer {
+    cursor: default;
     margin-top: 40px;
 }
 
